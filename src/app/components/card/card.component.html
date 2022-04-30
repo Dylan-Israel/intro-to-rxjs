@@ -1,0 +1,13 @@
+<div id="card-container">
+  <div id="card-header">
+    <i *ngIf="iconClasses" [class]="iconClasses"></i>
+    <div id="card-title">
+      <h5 *ngIf="title.length">{{title}}</h5>
+      <h6 *ngIf="subTitle.length">{{subTitle}}</h6>
+    </div>
+  </div>
+  <div id="card-body">
+    <ng-content #body></ng-content>
+  </div>
+  <div id="card-footer" #footer></div>
+</div>
